@@ -2,7 +2,7 @@
 services:
   session1:
     build:
-      context: .
+      context: ./src
       target: final
     environment:
       - TOKEN=... # The token of the user
