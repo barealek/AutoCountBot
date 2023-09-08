@@ -11,7 +11,7 @@ services:
       
   session2:
     build:
-      context: .
+      context: ./src
       target: final
     environment:
       - TOKEN=...
