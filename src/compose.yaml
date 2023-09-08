@@ -1,0 +1,19 @@
+
+services:
+  session1:
+    build:
+      context: .
+      target: final
+    environment:
+      - TOKEN=... # The token of the user
+      - LISTENER_ID=424265745627873302 # The ID of the user that will be listened to (Typically the other sessions id)
+      - COOLDOWN_TIME=1 # How long to wait before replying with the number + 1
+      
+  session1:
+    build:
+      context: .
+      target: final
+    environment:
+      - TOKEN=...
+      - LISTENER_ID=424265745627873302
+      - COOLDOWN_TIME=1
